@@ -10,7 +10,6 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\models\SignupForm;
 use backend\models\ResetpwdForm;
-use common\models\AuthItem;
 use common\models\AuthAssignment;
 use yii\helpers\ArrayHelper;
 /**
