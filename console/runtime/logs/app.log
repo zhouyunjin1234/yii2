@@ -1,0 +1,2143 @@
+2017-02-18 12:11:25 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --migratePath in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php:115
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#5 {main}
+2017-02-18 12:11:25 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487419885.5191
+    'REQUEST_TIME' => 1487419885
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migratePath=@app/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:11:25 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:11:25 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487419885.5191
+    'REQUEST_TIME' => 1487419885
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migratePath=@app/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:12:51 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: @app/rbac/migrations in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:71
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#8 {main}
+2017-02-18 12:12:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487419971.006
+    'REQUEST_TIME' => 1487419971
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@app/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:12:51 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:12:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487419971.006
+    'REQUEST_TIME' => 1487419971
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@app/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:13:58 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:13:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420031.1664
+    'REQUEST_TIME' => 1487420031
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:13:58 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:13:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420031.1664
+    'REQUEST_TIME' => 1487420031
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:16:02 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:15:46 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420146.744
+    'REQUEST_TIME' => 1487420146
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:16:02 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:15:46 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420146.744
+    'REQUEST_TIME' => 1487420146
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:18:32 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --migration in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php:115
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#5 {main}
+2017-02-18 12:18:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420312.5735
+    'REQUEST_TIME' => 1487420312
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration='
+        3 => '@yii/rbac/migrations'
+    ]
+    'argc' => 4
+]
+2017-02-18 12:18:32 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:18:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420312.5735
+    'REQUEST_TIME' => 1487420312
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration='
+        3 => '@yii/rbac/migrations'
+    ]
+    'argc' => 4
+]
+2017-02-18 12:18:57 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --migration in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php:115
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#5 {main}
+2017-02-18 12:18:57 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420337.2099
+    'REQUEST_TIME' => 1487420337
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:18:57 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:18:57 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420337.2099
+    'REQUEST_TIME' => 1487420337
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:20:48 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --migration in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php:115
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#5 {main}
+2017-02-18 12:20:48 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420448.0163
+    'REQUEST_TIME' => 1487420448
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:20:48 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:20:48 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420448.0163
+    'REQUEST_TIME' => 1487420448
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migration=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:26:20 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:26:15 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420775.714
+    'REQUEST_TIME' => 1487420775
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:26:20 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:26:15 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420775.714
+    'REQUEST_TIME' => 1487420775
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:28:09 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:27:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420849.3492
+    'REQUEST_TIME' => 1487420849
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:28:09 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:27:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487420849.3492
+    'REQUEST_TIME' => 1487420849
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:33:58 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:33:54 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421234.1792
+    'REQUEST_TIME' => 1487421234
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:33:58 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - %1 不是有效的 Win32 应用程序。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:33:54 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421234.1792
+    'REQUEST_TIME' => 1487421234
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:35:14 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:35:10 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421310.4666
+    'REQUEST_TIME' => 1487421310
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:35:14 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_mysql.dll' - %1 不是有效的 Win32 应用程序。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:35:10 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421310.4666
+    'REQUEST_TIME' => 1487421310
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:35:57 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:35:53 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421353.7011
+    'REQUEST_TIME' => 1487421353
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:35:57 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'ext\php_imagick.dll' - 找不到指定的模块。
+ in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-18 12:35:53 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421353.7011
+    'REQUEST_TIME' => 1487421353
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:36:53 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:36:49 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421409.6033
+    'REQUEST_TIME' => 1487421409
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:38:25 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 12:38:04 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487421484.6045
+    'REQUEST_TIME' => 1487421484
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:48:00 [-][-][-][error][ReflectionException] ReflectionException: Class db does not exist in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('db')
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('db')
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('db', Array, Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(154): yii\di\Container->get('db')
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(128): yii\di\Instance->get(NULL)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\MigrateController.php(152): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#13 {main}
+2017-02-18 12:48:00 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487422080.1756
+    'REQUEST_TIME' => 1487422080
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:57:07 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\db\Connection::components in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('components', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\db\Connection), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('yii\\db\\Connecti...', Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\db\\Connecti...', Array, Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(152): yii\di\ServiceLocator->get('db')
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(128): yii\di\Instance->get(NULL)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\MigrateController.php(152): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#12 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#13 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#14 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#15 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#17 {main}
+2017-02-18 12:57:07 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487422627.1499
+    'REQUEST_TIME' => 1487422627
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 12:59:54 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\db\Connection::components in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('components', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\db\Connection), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('yii\\db\\Connecti...', Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\db\\Connecti...', Array, Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(152): yii\di\ServiceLocator->get('db')
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(128): yii\di\Instance->get(NULL)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\MigrateController.php(152): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#12 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#13 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#14 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#15 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#17 {main}
+2017-02-18 12:59:54 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487422794.4625
+    'REQUEST_TIME' => 1487422794
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 13:00:15 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 13:00:10 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487422810.2534
+    'REQUEST_TIME' => 1487422810
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 13:02:11 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\db\Connection::components in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('components', Array)
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\db\Connection), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('yii\\db\\Connecti...', Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\db\\Connecti...', Array, Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(152): yii\di\ServiceLocator->get('db')
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\di\Instance.php(128): yii\di\Instance->get(NULL)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\MigrateController.php(152): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#12 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#13 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#14 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#15 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#17 {main}
+2017-02-18 13:02:11 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487422931.3213
+    'REQUEST_TIME' => 1487422931
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 13:03:25 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 13:03:21 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487423001.3803
+    'REQUEST_TIME' => 1487423001
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-02-18 13:03:55 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 E:\Program Files (x86)\Apache24\htdocs\blogdemo\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 E:\Program Files (x86)\Apache24\htdocs\blogdemo\yii(27): yii\base\Application->run()
+#12 {main}
+2017-02-18 13:03:52 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZHOUYUNJIN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zhouyunjin'
+    'LOCALAPPDATA' => 'C:\\Users\\zhouyunjin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZHOUYUNJIN-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\php;E:\\Program Files\\ImageMagick-7.0.4-Q16;C:\\Users\\zhouyunjin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ZHOUYU~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zhouyunjin-PC'
+    'USERNAME' => 'zhouyunjin'
+    'USERPROFILE' => 'C:\\Users\\zhouyunjin'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\'
+    'PHP_SELF' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_NAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'SCRIPT_FILENAME' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'PATH_TRANSLATED' => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487423032.2361
+    'REQUEST_TIME' => 1487423032
+    'argv' => [
+        0 => 'E:\\Program Files (x86)\\Apache24\\htdocs\\blogdemo\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
