@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
             		->indexBy('id')
             		->column(),
    			 ],
-            // 'create_time:datetime',
+             // 'create_time:datetime',
              //'update_time:datetime',
              ['attribute'=>'update_time',
              'format'=>['date','php:Y-m-d H:i:s'],

@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 use yii\helpers\Html;
 /**
- * This is the model class for table "post".
+ * This is the model class for table "post".  明确说明这是一个model class也就是对应着一张数据表
  *
  * @property integer $id
  * @property string $title
@@ -128,17 +128,16 @@ class Post extends \yii\db\ActiveRecord
     	parent::afterDelete();
     	Tag::updateFrequency($this->tags, '');
     }
+    //yii\web\UrlManager::createUrl(string|array $params) 
     public function getUrl()
     {
-        return Yii::$app->urlManager->createUrl(
+        return Yii::$app->urlManager->createUrl(      //Creates a URL using the given route and query parameters.
             ['post/detail','id'=>$this->id,'title'=>$this->title]);
     }
-    
     public function getBeginning($length=288)
     {
-        $tmpStr = strip_tags($this->content);
-        $tmpLen = mb_strlen($tmpStr);
-    
+        $tmpStr = strip_tags($this->content);      //Strip HTML and PHP tags from a string
+        $tmpLen = mb_strlen($tmpStr);   
         $tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
         return $tmpStr.($tmpLen>$length?'...':'');
     }
@@ -148,6 +147,8 @@ class Post extends \yii\db\ActiveRecord
         $links=array();
         foreach(Tag::string2array($this->tags) as $tag)
         {
+            //yii\helpers\BaseHtml::a(string $text, array|string|null $url, array $options) 
+            //Generates a hyperlink tag
             $links[]=Html::a(Html::encode($tag),array('post/index','PostSearch[tags]'=>$tag));
         }
         return $links;
@@ -155,6 +156,7 @@ class Post extends \yii\db\ActiveRecord
     
     public function getCommentCount()
     {
+        //此时的$this->id 相当于视图中的$model->id,故可以用$this来显示相关文章数据
         return Comment::find()->where(['post_id'=>$this->id,'status'=>2])->count();
     }
     
