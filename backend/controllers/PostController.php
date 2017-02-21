@@ -37,8 +37,7 @@ class PostController extends Controller
     public function actionIndex()
     {       
         $searchModel = new PostSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);   //此处执行了search函数,将所有get的参数作为查询参数
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

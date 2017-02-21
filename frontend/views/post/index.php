@@ -3,11 +3,11 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\ListView;
-
+use frontend\components\TagsCloudWidget;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\PostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+use common\models\Post;
 ?>
 
 <div class="container">
@@ -23,7 +23,7 @@ use yii\widgets\ListView;
     		<?= ListView::widget([
     				'id'=>'postList',
     				'dataProvider'=>$dataProvider,
-    				'itemView'=>'_listitem',//子视图,显示一篇文章的标题等内容.
+    				'itemView'=>'_listitem',      //子视图,显示一篇文章的标题等内容.
     				'layout'=>'{items} {pager}',
     				'pager'=>[
     						'maxButtonCount'=>10,   //Maximum number of page buttons that can be displayed.
@@ -59,7 +59,9 @@ use yii\widgets\ListView;
 				  <li class="list-group-item">
 				  <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 标签云
 				  </li>
-				  <li class="list-group-item">标签云</li>
+				  <li class="list-group-item">
+				        <?= TagsCloudWidget::widget(['tags'=>$tags]);?>
+				  </li>
 				</ul>			
 			</div>
 			

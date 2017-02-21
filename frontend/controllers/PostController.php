@@ -8,7 +8,7 @@ use common\models\PostSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use common\models\Tag;
 /**
  * PostController implements the CRUD actions for Post model.
  */
@@ -35,12 +35,14 @@ class PostController extends Controller
      */
     public function actionIndex()
     {
+        $tags=Tag::findTagWeights();
         $searchModel = new PostSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $dataProvider->pagination=['pageSize'=>5];
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'tags'=>$tags
         ]);
     }
 

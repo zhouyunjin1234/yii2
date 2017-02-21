@@ -114,7 +114,31 @@ class Tag extends \yii\db\ActiveRecord
     		self::removeTags(array_values(array_diff($oldTagsArray,$newTagsArray)));
     	}
     }
+    public static function findTagWeights($limit=20)
+    {
+        $tag_size_level = 5;  //分为五个档次
     
+        $models=Tag::find()->orderBy('frequency desc')->limit($limit)->all();  //取出所有的tags
+        $total=Tag::find()->limit($limit)->count();                            //计算实际取出的数量
+    
+        $stepper=ceil($total/$tag_size_level);                                 //每个等级的数量
+        
+        $tags=array();
+        $counter=1;
+    
+        if($total>0)
+        {
+            foreach ($models as $model)
+            {
+                //分配等级
+                $weight=ceil($counter/$stepper)+1;
+                $tags[$model->name]=$weight;
+                $counter++;
+            }
+            ksort($tags);
+        }
+        return $tags;
+    }
  
     
 }
