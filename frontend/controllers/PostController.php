@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\Tag;
+use common\models\Comment;
 /**
  * PostController implements the CRUD actions for Post model.
  */
@@ -37,12 +38,14 @@ class PostController extends Controller
     {
         $tags=Tag::findTagWeights();
         $searchModel = new PostSearch();
+        $recentComments =Comment::findRecentComments(10);
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $dataProvider->pagination=['pageSize'=>5];
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'tags'=>$tags
+            'tags'=>$tags,
+            'recentComments'=>$recentComments,
         ]);
     }
 

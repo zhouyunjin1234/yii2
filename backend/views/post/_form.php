@@ -15,7 +15,7 @@ use common\models\Adminuser;
 
 <div class="post-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(); ?>                       <!-- 提交到本身的控制器 -->
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
@@ -48,7 +48,6 @@ use common\models\Adminuser;
 	->column();
 	
 	*/
-
 	
 	?>
     

@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\ListView;
 use frontend\components\TagsCloudWidget;
+use frontend\components\RctReplyWidget;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\PostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -71,7 +72,9 @@ use common\models\Post;
 				  <li class="list-group-item">
 				  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 最新回复
 				  </li>
-				  <li class="list-group-item">最新回复</li>
+				  <li class="list-group-item">
+				    <?= RctReplyWidget::widget(['recentComments'=>$recentComments])?>
+				  </li>
 				</ul>			
 			</div>
 			
