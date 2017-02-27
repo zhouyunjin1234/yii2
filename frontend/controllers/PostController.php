@@ -13,6 +13,7 @@ use yii\filters\AccessControl;
 use common\models\Tag;
 use common\models\Comment;
 use common\models\User;
+<<<<<<< HEAD
 use yii\rest\Serializer;
 /**
  * PostController implements the CRUD actions for Post model.
@@ -40,6 +41,35 @@ class PostController extends Controller
      * @return mixed
      */
     public function actionIndex()
+=======
+use yii\rest\Serializer;
+/**
+ * PostController implements the CRUD actions for Post model.
+ */
+class PostController extends Controller
+{
+    public $added=0; //0代表还没有新回复
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * Lists all Post models.
+     * @return mixed
+     */
+    public function actionIndex()
+>>>>>>> 2e57664c3a57df6df99c7d3feb9bb35b3efb34fb
     {
         $tags=Tag::findTagWeights();
         $searchModel = new PostSearch();
@@ -160,6 +190,39 @@ class PostController extends Controller
               return $this->redirect('?r=site/login');
           }
         }
+<<<<<<< HEAD
+=======
+    }
+    public function actionDetail($id)
+    {
+        //step1. 准备数据模型
+        $model = $this->findModel($id);
+        $tags=Tag::findTagWeights();
+        $recentComments=Comment::findRecentComments();       
+        $commentModel = new Comment();
+         
+        //step2. 当评论提交时，处理评论
+        
+        if($commentModel->load(Yii::$app->request->post()))
+        {
+            if(!Yii::$app->user->isGuest)
+            {
+                $userMe = User::findOne(Yii::$app->user->id);
+                $commentModel->email = $userMe->email;
+                $commentModel->userid = $userMe->id;
+                
+                $commentModel->status = 1; //新评论默认状态为 pending
+                $commentModel->post_id = $id;
+                if($commentModel->save())
+                {
+                    $this->added=1;
+                }
+            }
+          else {
+              return $this->redirect('?r=site/login');
+          }
+        }
+>>>>>>> 2e57664c3a57df6df99c7d3feb9bb35b3efb34fb
          
         //step3.传数据给视图渲染
          
@@ -171,5 +234,10 @@ class PostController extends Controller
             'added'=>$this->added,
         ]);
          
+<<<<<<< HEAD
     }
 }
+=======
+    }
+}
+>>>>>>> 2e57664c3a57df6df99c7d3feb9bb35b3efb34fb
