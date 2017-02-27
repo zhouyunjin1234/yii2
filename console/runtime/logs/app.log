@@ -2141,3 +2141,619 @@ Stack trace:
     ]
     'argc' => 3
 ]
+2017-02-23 20:17:16 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 20:17:16 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487852236.3607
+    'REQUEST_TIME' => 1487852236
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 20:19:15 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 20:19:15 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487852355.3691
+    'REQUEST_TIME' => 1487852355
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 20:21:41 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 20:21:41 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487852501.9097
+    'REQUEST_TIME' => 1487852501
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 20:51:16 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 20:51:16 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487854276.1026
+    'REQUEST_TIME' => 1487854276
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 20:53:11 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 20:53:11 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487854391.503
+    'REQUEST_TIME' => 1487854391
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 21:00:09 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\HelloController' in file: /home/wwwroot/default/blogdemo/console/controllers/HelloController.php. Namespace missing?' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(562): class_exists('console\\control...')
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('hello')
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('hello/index')
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#9 {main}
+2017-02-23 21:00:09 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487854809.5499
+    'REQUEST_TIME' => 1487854809
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-23 21:11:11 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: hello/index' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Controller.php:125
+Stack trace:
+#0 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('index', Array)
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('index', Array)
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "hello/index".' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php:179
+Stack trace:
+#0 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#3 {main}
+2017-02-23 21:11:11 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487855471.0279
+    'REQUEST_TIME' => 1487855471
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+    ]
+    'argc' => 2
+]
+2017-02-24 00:09:54 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'console\controllers\Post' not found' in /home/wwwroot/default/blogdemo/console/controllers/HelloController.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-24 00:09:54 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487866194.9668
+    'REQUEST_TIME' => 1487866194
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/list'
+    ]
+    'argc' => 2
+]
+2017-02-24 00:19:00 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Unknown option: --r' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Controller.php:115
+Stack trace:
+#0 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('index', Array)
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('hello/index', Array)
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('hello/index', Array)
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#4 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#5 {main}
+2017-02-24 00:19:00 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487866740.9488
+    'REQUEST_TIME' => 1487866740
+    'argv' => [
+        0 => './yii'
+        1 => 'hello/index'
+        2 => '--r=1'
+    ]
+    'argc' => 3
+]
+2017-02-24 00:34:15 [-][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'scandir() has been disabled for security reasons' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php:150
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'scandir() has b...', '/home/wwwroot/d...', 150, Array)
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(150): scandir('/home/wwwroot/d...')
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(143): yii\console\controllers\HelpController->getModuleCommands(Object(yii\gii\Module))
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(77): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(89): yii\console\controllers\HelpController->getCommands()
+#5 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(184): yii\console\controllers\HelpController->getCommandDescriptions()
+#6 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#7 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#8 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#11 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#12 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('', Array)
+#13 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('', Array)
+#14 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#16 {main}
+2017-02-24 00:34:15 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487867655.9193
+    'REQUEST_TIME' => 1487867655
+    'argv' => [
+        0 => './yii'
+    ]
+    'argc' => 1
+]
+2017-02-24 00:42:19 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remind' in 'where clause'' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Command.php:900
+Stack trace:
+#0 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Command.php(900): PDOStatement->execute()
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Query.php(393): yii\db\Command->queryScalar()
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/ActiveQuery.php(329): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Query.php(300): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /home/wwwroot/default/blogdemo/console/controllers/SmsController.php(16): yii\db\Query->count()
+#6 [internal function]: console\controllers\SmsController->actionSend()
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('send', Array)
+#10 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('send', Array)
+#11 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('sms/send', Array)
+#12 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('sms/send', Array)
+#13 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remind' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `comment` WHERE (`remind`=0) AND (`status`=1)' in /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Query.php(393): yii\db\Command->queryScalar()
+#3 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/ActiveQuery.php(329): yii\db\Query->queryScalar('COUNT(*)', NULL)
+#4 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/db/Query.php(300): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /home/wwwroot/default/blogdemo/console/controllers/SmsController.php(16): yii\db\Query->count()
+#6 [internal function]: console\controllers\SmsController->actionSend()
+#7 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('send', Array)
+#10 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('send', Array)
+#11 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(176): yii\base\Module->runAction('sms/send', Array)
+#12 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('sms/send', Array)
+#13 /home/wwwroot/default/blogdemo/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /home/wwwroot/default/blogdemo/yii(27): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'remind' in 'where clause'
+)
+
+2017-02-24 00:42:19 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c1'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm'
+    'OLDPWD' => '/home/wwwroot/default/blogdemo/console'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'SUDO_USER' => 'zhouyunjin'
+    'SUDO_UID' => '1000'
+    'USERNAME' => 'root'
+    'MAIL' => '/var/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'PWD' => '/home/wwwroot/default/blogdemo'
+    'LANG' => 'zh_CN.UTF-8'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'SUDO_COMMAND' => '/bin/su'
+    'HOME' => '/root'
+    'LANGUAGE' => 'zh_CN:zh'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'SUDO_GID' => '1000'
+    'DISPLAY' => ':0'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/zhouyunjin/.Xauthority'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1487868139.1937
+    'REQUEST_TIME' => 1487868139
+    'argv' => [
+        0 => './yii'
+        1 => 'sms/send'
+    ]
+    'argc' => 2
+]
