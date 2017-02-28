@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env php        //指定用php来解析下面的代码
 <?php
 /**
  * Yii console bootstrap file.

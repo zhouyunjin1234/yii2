@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use common\models\Comment;
 ?>
 
 <?php foreach($comments as $comment): ?>

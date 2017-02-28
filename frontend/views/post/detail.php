@@ -8,14 +8,12 @@ use frontend\components\RctReplyWidget;
 
 use yii\helpers\HtmlPurifier;
 use common\models\Comment;
-use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\PostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 ?>
-
 <div class="container">
 
 	<div class="row">
@@ -24,7 +22,7 @@ use yii\helpers\Url;
 		
 			<ol class="breadcrumb">
 			<li><a href="<?= Yii::$app->homeUrl;?>">首页</a></li>
-			<li><a href="<?= Url::to(['post/index']);?>">文章列表</a></li>
+			<li><a href="<?= Yii::$app->homeUrl;?>?r=post/index">文章列表</a></li>
 			<li class="active"><?= $model->title?></li>
 			</ol>
 			
@@ -75,7 +73,7 @@ use yii\helpers\Url;
 			<h5><?= $model->commentCount.'条评论';?></h5>
 			<?= $this->render('_comment',array(
 					'post'=>$model,
-					'comments'=>$model->activeComments,
+					'comments'=>$model->comments,
 			));?>
 			<?php endif;?>
 			
