@@ -12,7 +12,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-use yii\web\NotFoundHttpException;
+
 /**
  * Site controller
  */
@@ -72,7 +72,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        
         return $this->render('index');
     }
 

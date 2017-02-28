@@ -13,13 +13,13 @@ use yii\filters\AccessControl;
 use common\models\Tag;
 use common\models\Comment;
 use common\models\User;
-use yii\rest\Serializer;
+
 /**
  * PostController implements the CRUD actions for Post model.
  */
 class PostController extends Controller
 {
-    public $added=0; //0代表还没有新回复
+	public $added=0; //0代表还没有新回复
     /**
      * @inheritdoc
      */
@@ -32,6 +32,26 @@ class PostController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+        		
+        		
+        		'access' =>[
+        				'class' => AccessControl::className(),
+        				'rules' =>
+        				[
+        						[
+        								'actions' => ['index'],
+        								'allow' => true,
+        								'roles' => ['?'],
+        								],
+        								[
+        										'actions' => ['index', 'detail'],
+        										'allow' => true,
+        										'roles' => ['@'],
+        						],
+        						],
+        						],
+        		
+        		
         ];
     }
 
@@ -41,16 +61,17 @@ class PostController extends Controller
      */
     public function actionIndex()
     {
-        $tags=Tag::findTagWeights();
+    	$tags=Tag::findTagWeights();
+    	$recentComments=Comment::findRecentComments();
+    	
         $searchModel = new PostSearch();
-        $recentComments =Comment::findRecentComments(10);
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $dataProvider->pagination=['pageSize'=>5];
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'tags'=>$tags,
-            'recentComments'=>$recentComments,
+        	'tags'=>$tags,
+        	'recentComments'=>$recentComments,
         ]);
     }
 
@@ -131,45 +152,51 @@ class PostController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+    
     public function actionDetail($id)
     {
-        //step1. 准备数据模型
-        $model = $this->findModel($id);
-        $tags=Tag::findTagWeights();
-        $recentComments=Comment::findRecentComments();       
-        $commentModel = new Comment();
-         
-        //step2. 当评论提交时，处理评论
-        
-        if($commentModel->load(Yii::$app->request->post()))
-        {
-            if(!Yii::$app->user->isGuest)
-            {
-                $userMe = User::findOne(Yii::$app->user->id);
-                $commentModel->email = $userMe->email;
-                $commentModel->userid = $userMe->id;
-                
-                $commentModel->status = 1; //新评论默认状态为 pending
-                $commentModel->post_id = $id;
-                if($commentModel->save())
-                {
-                    $this->added=1;
-                }
-            }
-          else {
-              return $this->redirect('?r=site/login');
-          }
-        }
-         
-        //step3.传数据给视图渲染
-         
-        return $this->render('detail',[
-            'model'=>$model,
-            'tags'=>$tags,
-            'recentComments'=>$recentComments,
-            'commentModel'=>$commentModel,
-            'added'=>$this->added,
-        ]);
-         
+    	//step1. 准备数据模型   	
+    	$model = $this->findModel($id);
+    	$tags=Tag::findTagWeights();
+    	$recentComments=Comment::findRecentComments();
+    	
+    	$userMe = User::findOne(Yii::$app->user->id);
+    	$commentModel = new Comment();
+    	$commentModel->email = $userMe->email;
+    	$commentModel->userid = $userMe->id;
+    	
+    	//step2. 当评论提交时，处理评论
+    	if($commentModel->load(Yii::$app->request->post()))
+    	{
+    		$commentModel->status = 1; //新评论默认状态为 pending
+    		$commentModel->post_id = $id;
+    		if($commentModel->save())
+    		{
+    			$this->added=1;
+    		}
+    	}
+    	
+    	//step3.传数据给视图渲染
+    	
+    	return $this->render('detail',[
+    			'model'=>$model,
+    			'tags'=>$tags,
+    			'recentComments'=>$recentComments,
+    			'commentModel'=>$commentModel, 
+    			'added'=>$this->added, 			
+    	]);
+    	
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

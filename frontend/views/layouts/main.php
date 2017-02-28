@@ -28,16 +28,17 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => '我的yii2',
+        'brandLabel' => '魏曦教你学Yii2.0',
+    	'brandOptions'=> ['style'=>'color:yellow;font-size:23px'],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => '主页', 'url' => ['/site/index']],
-        ['label' => '关于', 'url' => ['/site/about']],
-        ['label' => '联系', 'url' => ['/site/contact']],
+      
+        ['label' => '关于我们', 'url' => ['/site/about']],
+        ['label' => '联系我们', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
@@ -46,7 +47,7 @@ AppAsset::register($this);
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                '退出 (' . Yii::$app->user->identity->username . ')',
                 ['class' => 'btn btn-link']
             )
             . Html::endForm()
@@ -70,7 +71,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; 我的yii2 <?= date('Y') ?></p>
+        <p class="pull-left">&copy; 魏曦教你学Yii2.0 <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
