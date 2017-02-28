@@ -73,7 +73,7 @@ use common\models\Comment;
 			<h5><?= $model->commentCount.'条评论';?></h5>
 			<?= $this->render('_comment',array(
 					'post'=>$model,
-					'comments'=>$model->comments,
+					'comments'=>$model->comment,
 			));?>
 			<?php endif;?>
 			

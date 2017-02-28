@@ -159,7 +159,11 @@ class Post extends \yii\db\ActiveRecord
         //此时的$this->id 相当于视图中的$model->id,故可以用$this来显示相关文章数据
         return Comment::find()->where(['post_id'=>$this->id,'status'=>2])->count();
     }
-    
+    public function getComment()
+    {
+        //此时的$this->id 相当于视图中的$model->id,故可以用$this来显示相关文章数据
+        return Comment::find()->where(['post_id'=>$this->id,'status'=>2])->all();
+    }
     
     
     
