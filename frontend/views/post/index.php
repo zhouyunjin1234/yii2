@@ -75,17 +75,19 @@ use yii\caching\DbDependency;
 				  <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 标签云
 				  </li>
 				  <li class="list-group-item">
-                                                                          <?php   
-                                                                                    $dependency = new DbDependency(['sql'=>'select count(id) from post']);
-                                                                                  
+                                                                         <?php 
+				  //片段缓存示例代码
+				  /*
+				  $dependency = new DbDependency(['sql'=>'select count(id) from post']);
+				  
 				  if ($this->beginCache('cache',['duration'=>600],['dependency'=>$dependency]))
 				  {
 				  	echo TagsCloudWidget::widget(['tags'=>$tags]);
 				  	$this->endCache();
-				  }                                                                             
-                                                                          
-                                                                          ?>
-				
+				  }
+				  */
+				  ?>
+				  <?= TagsCloudWidget::widget(['tags'=>$tags]);?>
 				   </li>
 				</ul>			
 			</div>

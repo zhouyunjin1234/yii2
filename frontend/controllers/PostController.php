@@ -50,6 +50,19 @@ class PostController extends Controller
         						],
         						],
         						],
+            'pageCache'=>[
+                'class'=>'yii\filters\PageCache',
+                'only'=>['index'],
+                'duration'=>600,
+                'variations'=>[
+                    Yii::$app->request->get('page'),
+                    Yii::$app->request->get('PostSearch'),
+                ],
+                'dependency'=>[
+                    'class'=>'yii\caching\DbDependency',
+                    'sql'=>'select count(id) from post',
+                ],
+            ],
         		
         		
         ];
