@@ -11,6 +11,7 @@ return [
             ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
+            'keyPrefix'=> 'blodedemo'
         ],
     ],
 ];
