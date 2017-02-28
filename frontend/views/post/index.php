@@ -41,7 +41,18 @@ use common\models\Post;
 			<div class="searchbox">
 				<ul class="list-group">
 				  <li class="list-group-item">
-				  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查找文章
+				  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 查找文章 查找文章(
+				    <?php 
+				            $data =Yii::$app->cache->get('posCount');
+				            if($data === false)
+				            {
+				                $data =Post::find()->count();
+				                sleep(4);
+				                Yii::$app->cache->set("posCount",$data);
+				            }
+				            echo $data;
+				    ?>
+				  )
 				  </li>
 				  <li class="list-group-item">				  
 					  <form class="form-inline" action="index.php?r=post/index" id="w0" method="get">
